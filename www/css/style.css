@@ -1,0 +1,963 @@
+body {
+    margin: 0;
+	background-color: #E5DACC;
+	font-size		: 16px;
+	font-family		: 'Helvetica';
+}
+
+img {
+	border			: none;
+	margin			: 0;
+	padding			: 0;
+	vertical-align	: middle;
+	max-width		: 100%;
+	height			: auto;
+}
+
+a img {
+	border			: 0;
+}
+
+a {
+    color:#000000;
+    text-decoration: none;
+}
+
+td a {
+    color:#1a0dab;
+    text-decoration: underline;;
+}
+
+/*トップマージンを指定*/
+.m_top3  { margin-top:3px;}
+.m_top5  { margin-top:5px;}
+.m_top10 { margin-top:10px;}
+.m_top12 { margin-top:12px;}
+.m_top15 { margin-top:15px;}
+.m_top17 { margin-top:17px;}
+.m_top20 { margin-top:20px;}
+.m_top25 { margin-top:20px;}
+.m_top30 { margin-top:30px;}
+.m_top35 { margin-top:35px;}
+.m_top40 { margin-top:40px;}
+.m_top45 { margin-top:45px;}
+.m_top60 { margin-top:60px;}
+.m_top80 { margin-top:80px;}
+.m_top100 { margin-top:100px;}
+.m_top120 { margin-top:120px;}
+.m_top160 { margin-top:160px;}
+.m_top245 { margin-top:245px;}
+
+/*ボトムマージンを指定*/
+.m_b2  { margin-bottom:2px;}
+.m_b5  { margin-bottom:5px;}
+.m_b10 { margin-bottom:10px;}
+.m_b15 { margin-bottom:15px;}
+.m_b20 { margin-bottom:20px;}
+.m_b30 { margin-bottom:30px;}
+.m_b35 { margin-bottom:35px;}
+.m_b40 { margin-bottom:40px;}
+.m_b50 { margin-bottom:50px;}
+.m_b60 { margin-bottom:60px;}
+.m_b80 { margin-bottom:80px;}
+.m_b100 { margin-bottom:100px;}
+.m_b120 { margin-bottom:120px;}
+
+/*左マージンを指定*/
+.m_l3  { margin-left:3px;}
+.m_l5  { margin-left:5px;}
+.m_l8  { margin-left:8px;}
+.m_l10 { margin-left:10px;}
+.m_l13 { margin-left:10px;}
+.m_l15 { margin-left:15px;}
+.m_l20 { margin-left:20px;}
+.m_l24 { margin-left:24px;}
+.m_l25 { margin-left:25px;}
+.m_l28 { margin-left:28px;}
+.m_l30 { margin-left:30px;}
+.m_l35 { margin-left:35px;}
+.m_l40 { margin-left:40px;}
+.m_l58 { margin-left:58px;}
+.m_l70 { margin-left:70px;}
+.m_l85 { margin-left:85px;}
+
+/*右マージンを指定*/
+.m_r2  { margin-right:2px;}
+.m_r5  { margin-right:5px;}
+.m_r10 { margin-right:10px;}
+.m_r15 { margin-right:15px;}
+.m_r20 { margin-right:20px;}
+.m_r25 { margin-right:25px;}
+.m_r30 { margin-right:30px;}
+.m_r35 { margin-right:35px;}
+.m_r40 { margin-right:40px;}
+
+/*上下マージンを指定*/
+.v_sp5  { margin: 5px 0; }
+.v_sp10 { margin: 10px 0; }
+.v_sp15 { margin: 15px 0; }
+.v_sp20 { margin: 20px 0; }
+.v_sp30 { margin: 30px 0; }
+
+/*左右マージンを指定*/
+.h_sp10 { margin: 0 10px; }
+.h_sp15 { margin: 0 15px; }
+.h_sp20 { margin: 0 20px; }
+.h_sp25 { margin: 0 25px; }
+.h_sp30 { margin: 0 30px; }
+
+/*上PADDING*/
+.p_top5  { padding-top: 5px; }
+.p_top10 { padding-top: 10px; }
+.p_top15 { padding-top: 15px; }
+.p_top20 { padding-top: 20px; }
+.p_top30 { padding-top: 30px; }
+.p_top40 { padding-top: 40px; }
+.p_top50 { padding-top: 50px; }
+
+/*下PADDING*/
+.p_b30  { padding-bottom: 30px; }
+.p_b130  { padding-bottom: 130px; }
+
+/*左右PADDING*/
+.p_h5  { padding: 0px  5px; }
+.p_h10 { padding: 0px 10px; }
+.p_h20 { padding: 0px 20px; }
+
+/*上下PADDING*/
+.p_v5  { padding: 5px  0px; }
+.p_v10 { padding: 10px 0px; }
+.p_v20 { padding: 20px 0px; }
+
+/*PADDING周囲*/
+.pad_5  { padding: 5px; }
+.pad_10 { padding: 10px; }
+.pad_20 { padding: 20px; }
+.pad_30 { padding: 30px; }
+
+.FloatRight { float: right; }
+.FloatLeft  { float: left; }
+.Clear      { clear: both; }  /*<br class="Clear">*/
+.clearfix
+{
+  display:block;
+  min-height:1px;
+}
+* html .clearfix{
+  height:1px;
+}
+.clearfix {zoom:1;}
+.clearfix:after {
+  content: ""; 
+  display: block; 
+  clear: both;
+}
+.banner {
+	border: 1px solid #ff00ff;
+}
+
+th{
+    white-space: nowrap;
+    font-weight:normal;
+}
+
+table{
+    width: 100%;
+    margin-left:1%;
+}
+
+.lowtext{
+    width: 100%;
+    margin:20px;
+    text-align:left;
+}
+
+/*----------------------TOP-------------------------------*/
+.user_name{
+    width:100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.header {
+	width			: 100%;
+    height          : 60px;
+	text-align		: center;
+	position		: fixed;
+    top             : 0;
+	background-color: #41767A;
+	z-index			: 100;
+	padding-top		: 20px;
+}
+
+.header_home {
+	width			: 100%;
+	max-width		: 180px;
+    margin          : -6px auto;
+}
+
+.header_logo {
+    width			: 100%;
+	max-width		: 180px;
+    margin          : 0 auto;
+}
+
+.header_arrowlogo {
+    width			: 30px;
+	max-width		: 180px;
+    float           : left;
+    margin-left     : 20px;
+}
+
+.header_menulogo {
+    float     :right;
+	max-width		: 50px;
+    margin-right:7px;
+    margin-top      : -45px;
+    cursor          : pointer;
+}
+
+.sidenav {
+    width        	: 100%;
+	max-height		: 0%;
+	height			: 100%;
+	position		: fixed;
+	z-index			: 1;
+	top				: 0;
+	right			: 0;
+    background      : rgba(0,0,0,0.7);
+    overflow		: hidden;
+	transition		: 0.8s;
+	opacity			: 0.3;
+}
+
+.sidenav a {
+	margin	        : 0px 0px 15px 10px;
+    text-decoration	: none;
+    font-size		: 5vw;
+    color			: white;
+   	display			: block;
+   	transition		: 0.3s;
+	text-align		: left;
+}
+
+.sidenav .close{
+    width:100%;
+    padding-left:80%;
+}
+
+.sidenav .closebtn {
+    width:50px;
+	font-size		: 10vw;
+	color			: white;
+	display			: block;
+	text-align		: right;
+}
+
+.menu_list {
+    margin-left     : 15px;
+}    
+
+
+/*----------------------login-------------------------------*/
+.loginmanu{
+	padding  		 : 100px 0px 0px 20px;
+}
+
+.userid_area{
+    margin-bottom:10px;
+}
+
+.password_area{
+    margin-top:10px;
+}
+
+input{
+    height: 30px;
+}
+
+.input_text{
+    width:90%;
+    height:30px;
+    border: solid #000 1px;
+}
+
+.button_area{
+    width:100%;
+    margin-top:10px;
+}
+
+.btn {
+    width           : 100%;
+    height          : 80px;
+    margin          : 30px auto 10px auto;
+}
+
+.btn_text {
+    color           : #ffffff;
+    line-height     : 25px;
+    margin          : -62px auto 0px auto;
+    font-size       : 25px;
+    text-align      : center;
+}
+
+
+/*----------------------nouka_Index-------------------------------*/
+.line{
+    margin:0px;
+    color:#fff;
+    background-color:#fff;
+}
+
+.line2{
+    margin:0px;
+    color:#fff;
+    background-color:#fff;
+    display:none;
+}
+
+.menudrop{
+    width        	: 100%;
+	background-color: #41767A;
+	padding-top		: 85px;
+}
+
+.bluemenu{
+    background      : #06A290;
+    width    		: 100%;
+    padding-bottom  : 30px;
+    padding-top     : 30px;
+}
+
+.bluemenu img{
+    float    	: right;
+    width       : 40px;
+    height      : auto;
+    padding-right : 40px;
+}
+
+.bluemenu {
+    text-decoration: none;
+    color       : #fff;
+    font-size   : 20px;
+    padding-left: 20px;
+
+}
+
+.bluemenu span{
+    font-style: bold;
+    border-radius: 32px;
+    background-color: #d90000;/* 円の色 */
+    margin-left:40px;
+    padding: 8px 14px;
+}
+
+.orangemenu{
+    background      : #F14F32;
+    width        	: 100%;
+    padding-bottom  : 30px;
+    padding-top     : 30px;
+}
+
+.orangemenu img{
+    float    	: right;
+    width       : 40px;
+    height      : auto;
+    padding-right : 40px;
+}
+
+.orangemenu {
+    text-decoration: none;
+    color       : #fff;
+    font-size   : 20px;
+    padding-left: 20px;
+
+}
+
+.orangemenu span{
+    font-style: bold;
+    border-radius: 32px;
+    background-color: #d90000;/* 円の色 */
+    margin-left:40px;
+    padding: 8px 14px;
+}
+
+.yellowmenu{
+    background      : #F0AE25;
+    width           : 100%;
+    padding-bottom  : 30px;
+    padding-top     : 30px;
+}
+
+.yellowmenu img{
+    float    	: right;
+    width       : 40px;
+    height      : auto;
+    padding-right : 40px;
+}
+
+.yellowmenu {
+    text-decoration: none;
+    color       : #fff;
+    font-size   : 20px;
+    padding-left: 20px;
+
+}
+
+.yellowmenu span{
+    font-style: bold;
+    border-radius: 32px;
+    background-color: #d90000;/* 円の色 */
+    margin-left:40px;
+    padding: 8px 14px;
+}
+
+
+/*----------------------------------DROPDOWN----------------------------------*/
+.bluemenu2{
+    background      : #548882;
+    width           : 100%;
+    padding-bottom  : 10px;
+    padding-top     : 25px;
+    display         : none;
+
+}
+
+.bluemenu2 img{
+    float           : right;
+    width           : auto;
+    height          : 40px;
+    padding-right : 40px;
+}
+
+.bluemenu2 {
+    text-decoration: none;
+    color           : #fff;
+    font-size       : 20px;
+    padding-left    : 20px;
+
+}
+
+.bluemenu2 span{
+    font-style: bold;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background-color: #BF0000;/* 円の色 */
+    margin-left:20px;
+    padding: 16px 22px;
+}
+
+.orgmenu2{
+    background      : #C87373;
+    width           : 100%;
+    padding-bottom  : 10px;
+    padding-top     : 25px;
+    display         : none;
+}
+
+.orgmenu2 img{
+    float           : right;
+    width           : auto;
+    height          : 40px;
+    padding-right : 40px;
+}
+
+.orgmenu2 {
+    text-decoration: none;
+    color           : #fff;
+    font-size       : 20px;
+    padding-left    : 20px;
+}
+
+.orgmenu2 span{
+    font-style: bold;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background-color: #BF0000;/* 円の色 */
+    margin-left:20px;
+    padding: 16px 22px;
+}
+
+ .yellmenu2{
+    background      : #B4A076;
+    width           : 100%;
+    padding-bottom  : 10px;
+    padding-top     : 25px;
+    display         : none;
+}
+
+.yellmenu2 img{
+    float           : right;
+    width           : auto;
+    height          : 40px;
+    padding-right : 40px;
+}
+
+.yellmenu2 {
+    text-decoration: none;
+    color           : #fff;
+    font-size       : 20px;
+    padding-left    : 20px;
+}
+
+.yellmenu2 span{
+    font-style: bold;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background-color: #BF0000;/* 円の色 */
+    margin-left:20px;
+    padding: 16px 22px;
+}
+
+
+/*----------------- 出荷管理登録・承認ページ ---------------*/
+.shukka_area {
+    width    		: 100%;
+	text-align		: center;
+    padding-top		: 100px;
+}
+
+.shukka_title_area {
+    width			: 100%;
+    background-color: #F14F32;
+    position        : absolute;
+    height          : 60px;
+}
+
+.shukka_title_text {
+    color           : #ffffff;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px; 
+    font-weight     : bold;
+    margin          : 20px 0px 10px 10px;
+    position        : relative;  
+}
+
+.shukka_area1 {
+    width    		: 100%;
+    margin-top      : 60px;
+    position        : absolute;
+    height          : 0 auto;   
+}
+
+.shukka_area_text1 {
+    color           : #41767A;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 20px;
+    margin          : 10px 0px 10px 10px;
+    position        : relative;   
+    vertical-align: middle;
+}
+
+.shukka_area_btn1 {
+    width           : 720px;
+    max-width       : 95%;
+    height          : 98px;
+    background-color: #F14F32;
+    border-radius   : 10px 10px 10px 10px;
+    margin          : 15px auto 0 auto;
+}
+
+.shukka_area_text2 {
+    color           : #333333;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px;
+    margin          : 35px 0px 10px 20px;
+    position        : absolute;   
+}
+
+.shukka_area_text {
+    color           : #333333;
+    line-height     : 25px;
+    text-align      : right; 
+    font-size       : 25px;
+    margin          : 35px 0px 10px 250px;
+    position        : absolute;
+}
+
+.shukka_area_text4 {
+    color           : #333333;
+    line-height     : 25px;
+    text-align      : right; 
+    font-size       : 25px;
+    margin          : 35px 0px 10px 260px;
+    position        : absolute;
+    float:right;
+}
+
+.shukka_area_btn2 {
+    width           : 720px;
+    max-width       : 95%;
+    height          : 98px;
+    background-color: #41767A;
+    border-radius   : 10px 10px 10px 10px;
+    margin          : 10px auto 0 auto;
+}
+
+.shukka_area_text5 {
+    color           : #ffffff;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px;
+    margin          : 35px 0px 10px 20px;
+    position         : absolute;   
+}
+
+.shukka_area_text6 {
+    color           : #ffffff;
+    line-height     : 25px;
+    text-align      : right; 
+    font-size       : 25px;
+    margin          : 35px 0px 10px 250px;
+    position        : absolute;
+}
+
+.shukka_approve_btn {
+    width           : 96%;
+    height          : 80px;
+    margin          : 200px auto 10px auto;
+}
+
+.shukka_approve_text {
+    color           : #ffffff;
+    line-height     : 25px;
+    margin          : -62px auto 0px auto;
+    font-size       : 25px;     
+}
+
+
+/*----------------- 出荷予定承認ページ ---------------*/
+.shukkalist{
+    margin-top:100px;
+    margin-right:20px;
+}
+
+.shukkalist_title_area {
+    width    		: 100%;
+    background      : #F14F32;
+    position        : absolute;
+    height          : 60px;
+    top             : 100px;
+}
+
+.shukkalist_title_text {
+    color           : #FFFFFF;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px; 
+    font-weight     : bold;
+    margin          : 20px 0px 10px 10px;
+}
+
+.shukka_button{
+    width           : 100%;
+    height          : auto;
+    background      : #F7FE2E;
+    text-align      : center;
+    padding-top     : 20px;
+    padding-bottom  : 20px;
+    margin-bottom   : 1%;
+}
+
+
+/*----------------- 入金管理登録・承認ページ ---------------*/
+.nyuukin_area {
+    width        	: 100%;
+	text-align		: center;
+    padding-top		: 85px;
+}
+
+.nyuukin_title_area {
+    width			: 100%;
+    background      : #B4A076;
+    margin-top      : 70px;
+    position        : absolute;
+    height          : 60px;
+}
+
+.nyuukin_title_text {
+    color           : #ffffff;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px; 
+    font-weight     : bold;
+    margin          : 30px 0px 10px 10px;
+    position        : relative;  
+}
+
+
+/*----------------- 入金実績照会ページ ---------------*/
+.select_between{
+    font-size:16px;
+}
+
+.select_year {
+    font-size:16px;
+    height          : 30px;
+}
+
+.select_month {
+    font-size:16px;
+    height          : 30px;
+}
+
+
+/*----------------- 出荷予定承認ページ ---------------*/
+.nyuukinlist{
+    margin-top:100px;
+    margin-right:20px;
+}
+
+.nyuukinlist_title_area {
+    background      : #B4A076;
+    width    		: 100%;
+    position        : absolute;
+    height          : 60px;
+    top             : 100px;
+}
+
+.nyuukinlist_title_text {
+    color           : #FFFFFF;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px; 
+    font-weight     : bold;
+    margin          : 20px 0px 10px 10px;
+}
+
+.nyuukinlist_subtitle_area {
+    width        	: 100%;
+}
+
+.nyuukinlist_subtitle_text {
+    color           : #000000;
+    line-height     : 20px;
+    text-align      : center; 
+    font-size       : 20px; 
+    font-weight     : bold;
+    margin          : 0px 0px 10px 10px;
+}
+
+.nyuukin_button{
+    width           : 100%;
+    height          : auto;
+    background      : #afd9ed;
+    text-align      : center;
+    padding-top     : 20px;
+    padding-bottom  : 20px;
+    margin-bottom   : 1%;
+}
+
+.sum_area{
+    width:100%;
+    text-align:right;
+}
+
+.nyuukin_sum{
+    text-decoration: underline;
+}
+
+
+/*----------------- 入荷管理登録・承認ページ ---------------*/
+.nyuuka_area {
+    width            : 100%;
+	text-align		: center;
+    padding-top		: 85px;
+}
+
+.nyuuka_title_area {
+    width			: 100%;
+    background-color: #B4A076;
+    margin-top      : 70px;
+    position        : absolute;
+    height          : 60px;
+}
+
+.nyuuka_title_text {
+    color           : #ffffff;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px; 
+    font-weight     : bold;
+    margin          : 30px 0px 10px 10px;
+    position        : relative;  
+}
+
+.nyuukalist{
+    margin-top:100px;
+    margin-right:20px;
+}
+
+.nyuukalist_title_area {
+    width    		: 100%;
+    background-color: #B4A076;
+    position        : absolute;
+    height          : 60px;
+    top             : 100px;
+}
+
+.nyuukalist_title_text {
+    color           : #FFFFFF;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px; 
+    font-weight     : bold;
+    margin          : 20px 0px 10px 10px;
+}
+
+.nyuukalist_subtitle_area {
+    width        	: 100%;
+}
+
+.nyuukalist_subtitle_text {
+    color           : #000000;
+    line-height     : 20px;
+    text-align      : center; 
+    font-size       : 20px; 
+    font-weight     : bold;
+    margin          : 0px 0px 10px 10px;
+}
+
+.nyuuka_button{
+    width           : 100%;
+    height          : auto;
+    background      : #afd9ed;
+    text-align      : center;
+    padding-top     : 20px;
+    padding-bottom  : 20px;
+    margin-bottom   : 1%;
+}
+
+
+/*----------------- 注文確認・受付ページ ---------------*/
+.chumon_area {
+    width            : 100%;
+    text-align		: center;
+    padding-top		: 100px;
+}
+
+.chumon_title_area {
+    width    		: 100%;
+    background-color: #548882;
+    position        : absolute;
+    height          : 60px;
+}
+
+.chumon_title_text {
+    color           : #ffffff;
+    line-height     : 25px;
+    text-align      : left; 
+    font-size       : 25px; 
+    font-weight     : bold;
+    margin          : 20px 0px 10px 10px;
+    position        : relative;  
+}
+
+.search_label{
+    width:20%;
+}
+
+.chumonlist{
+    margin-top:100px;
+    margin-right:20px;
+}
+
+.chumon_tab{
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.chumon_left_tab{
+    margin-left:7px;
+    text-align: center;
+    width: 48%;
+    height: 30px;
+    float:left;
+    border-radius: 5px 5px 0 0;
+    border: 1px dotted black;
+}
+
+.chumon_right_tab{
+    text-align: center;
+    width: 48%;
+    height: 30px;
+    float:right;
+    border-radius: 5px 5px 0 0;
+    border: 1px dotted black;
+}
+
+.chumon_ontab{
+    background-color: transparent;
+}
+
+.chumon_offtab{
+    background-color: #C0C0C0;
+}
+
+.chumon_button_area{
+    width:100%;
+    margin: 20px auto 20px auto;
+}
+
+.chumon_full_button{
+    border:solid #000 1px;
+    background-color: #ffa500;
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    height: 20px;
+}
+
+.chumon_button{
+    width           : 100%;
+    height          : auto;
+    background      : #ffa500;
+    text-align      : center;
+    padding-top     : 20px;
+    padding-bottom  : 20px;
+    margin-bottom   : 1%;
+}
+
+.al_left {
+    text-align: left;
+}
+
+.chumon_total {
+    border: 1px solid #000000;
+}
+
+.chumon_message {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.chumon_input {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.chumon_input_text{
+    width:62%;
+    border: solid #000 1px;
+}
+
+.incart{
+    border:solid 1px #333333;
+    background: #ffa500;
+}
+
+
+/*----------------- 配達実績照会ページ ---------------*/
+.haitatsu_area{
+    width            : 100%;
+    text-align    	: center;
+    padding-top		: 85px;
+}

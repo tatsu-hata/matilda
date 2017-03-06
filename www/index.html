@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--ヘッダー-->
+    <div class="header clearfix">
+        <div class="header_home">
+            <a href="index.html"><img src="imgs/logomark.png" alt="HOME"></a>
+        </div>
+    </div>
+    <!--メニューボタン-->
+    <div class="loginmanu">
+        <div class="userid_area">ユーザＩＤ<input type="text" id="user_ID" class="input_text"></div>
+        <div class="password_area">パスワード<input type="password" id="Password" class="input_text"></div>
+        <br/>※農家ページには両方未入力<br/>※飲食店(配達先)ページにはIDにのみ入力<br/>※飲食店(請求先)ページにはパスワードにのみ入力
+        </div>
+    <div class="button_area">
+            <a id="login_button" href="#" onclick="login();">
+            <img src="imgs/btn_login.png" class="btn">
+            <p class="btn_text">ログイン</p></a>
+            <a id="clear_button" href="index.html">
+            <img src="imgs/btn_login.png" class="btn">
+            <p class="btn_text">クリア</p></a>
+    </div>
+    
+</body>
+</html>

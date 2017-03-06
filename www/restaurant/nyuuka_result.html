@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="../components/loader.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        <!-- script for navmenu -->
+            function openNav() {
+        		$("#mySidenav").css("max-height", "100%");
+    		    $("#mySidenav").css("opacity","1");		
+    		    $("body").css("overflow-y","hidden");
+    		}
+    		function closeNav() {
+    		    $("#mySidenav").css("max-height", "0");
+    		    $("#mySidenav").css("opacity","0.3");	
+    		    $("body").css("overflow-y","auto");
+    		}
+    	<!-- end -->
+    </script>
+</head>
+<body>
+
+    <!--ヘッダー-->
+    <div class="header clearfix">
+        <a href="javascript:history.back();"><img src="../imgs/btn_back.png" class="header_arrowlogo"></a>
+        <div class="header_home">
+            <a href="index.html"><img src="../imgs/logomark.png" alt="HOME"></a>
+        </div>
+        <!--メニューボタン-->
+        <img onclick="openNav()" src="../imgs/btn_menu.png" class="header_menulogo" alt="" />
+        <div id="mySidenav" class="sidenav">
+            <div class="close">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="../imgs/btn_close.png" class="header_closelogo"></a>
+            </div>
+            <a href="index.html">トップページ</a>
+            <a href="#">注文管理</a>
+            <a href="chumon.html"><span class="menu_list">注文確認・受付</span></a>
+            <a href="#">配達管理</a>
+            <a href="nyuuka.html"><span class="menu_list">入荷確認登録</span></a>
+            <a href="haitatsu.html"><span class="menu_list">配達実績照会</span></a>
+            <a href="claim.html"><span class="menu_list">クレーム登録</span></a>
+            <a href="../index.html">ログアウト</a>
+        </div>
+    </div>
+    
+    <!--list-->
+    <div class="nyuuka_area">
+        <div class="nyuukalist_title_area">
+            <p class="nyuukalist_title_text">入荷確認登録（完了）</p>           
+        </div>
+        <div class="nyuukalist">
+        <div class="nyuukalist_subtitle_area">
+            <p class="nyuukalist_subtitle_text">YYYY年MM月DD日hh時mm分 配達明細</p>           
+        </div>
+            <table border="1" width="auto" cellspacing="0" cellpadding="5" bordercolor="#333333">
+                <tr>
+                    <th>注文番号</th>
+                    <th>生産者</th>
+                    <th>商品</th>
+                    <th>数量</th>
+                </tr>
+                <tr>
+                    <td>XXXXXX</td>
+                	<td>○○</td>
+                    <td>XXXX</td>
+                	<td>1</td>
+            	</tr>
+                <tr>
+                    <td>XXXXXX</td>
+                	<td>○○</td>
+                    <td>XXXX</td>
+                	<td>1</td>
+            	</tr>
+                <tr>
+                    <td>XXXXXX</td>
+                	<td>○○</td>
+                    <td>XXXX</td>
+                	<td>1</td>
+            	</tr>
+                <tr>
+                    <td>XXXXXX</td>
+                	<td>○○</td>
+                    <td>XXXX</td>
+                入荷確認登録	<td>1</td>
+            	</tr>
+            </table>
+            <div class="lowtext">
+                入荷確認を登録しました。
+            </div>
+        </div>
+            <div class="button_area">
+            <a id="result" href="nyuuka.html">
+            <img src="../imgs/btn_nyuuka.png" class="btn">
+            <p class="btn_text">再度入荷確認登録する</p></a>
+            <a id="cancel" href="index.html">
+            <img src="../imgs/btn_nyuuka.png" class="btn">
+            <p class="btn_text">TOPへ戻る</p></a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

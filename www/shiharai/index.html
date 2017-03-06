@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="../components/loader.js"></script>
+    <script src="../js/drop.js"></script>
+    <link rel="stylesheet" href="../components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        <!-- script for navmenu -->
+            function openNav() {
+    			$("#mySidenav").css("max-height", "100%");
+    		    $("#mySidenav").css("opacity","1");		
+    		    $("body").css("overflow-y","hidden");
+    		}
+    		function closeNav() {
+    		    $("#mySidenav").css("max-height", "0");
+    		    $("#mySidenav").css("opacity","0.3");	
+    		    $("body").css("overflow-y","auto");
+    		}
+    	<!-- end -->
+    </script>
+</head>
+<body>
+    <!--ヘッダー-->
+    <div class="header clearfix">
+        <div class="header_home">
+            <a href="index.html"><img src="../imgs/logomark.png" alt="HOME"></a>
+        </div>
+        <!--メニューボタン-->
+        <img onclick="openNav()" src="../imgs/btn_menu.png" class="header_menulogo" alt="" />
+        <div id="mySidenav" class="sidenav">
+            <div class="close">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="../imgs/btn_close.png" class="header_closelogo"></a>
+            </div>
+            <a href="index.html">トップページ</a>
+            <a href="#">支払管理</a>
+            <a href="approval.html"><span class="menu_list">次月支払承認</span></a>
+            <a href="jisseki.html"><span class="menu_list">支払実績照会</span></a>
+            <a href="../index.html">ログアウト</a>
+        </div>
+    </div>
+    <div class="menudrop clearfix">
+    <div class="user_name">[飲食店(請求先)]○○○○さん</div>
+        <a href="#" onclick="drop()";>
+            <div class="bluemenu clearfix">支払管理<span>1</span><img src="../imgs/btn_arrow1.png" alt="" id="blues" >
+            </div>
+        </a>
+        <HR class="line">
+        <a href="approval.html">
+        <div id="dis" class="bluemenu2 clearfix">次月支払承認<img src="../imgs/btn_arrpw_sub.png" alt="">
+        </div></a>
+        <HR class="line2" id="bluesub1">
+        <a href="jisseki.html">
+        <div id="dis2" class="bluemenu2 clearfix">支払実績照会<img src="../imgs/btn_arrpw_sub.png" alt="">
+        </div>
+        </a>
+    </div>
+</body>
+</html>
